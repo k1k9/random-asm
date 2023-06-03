@@ -36,14 +36,14 @@ _return:
     syscall 
 
 _easy_part:
-    ; compare 8 characters from input with ctfLearn{
-    cmp byte [input], 0x63 ; c
+    ; compare 8 characters from input with CTFlearn{
+    cmp byte [input], 0x43 ; C
     jne _return
-    cmp byte [input + 1], 0x74 ;t
+    cmp byte [input + 1], 0x54 ;T
     jne _return
-    cmp byte [input + 2], 0x66 ;f
+    cmp byte [input + 2], 0x46 ; F
     jne _return
-    cmp byte [input + 3], 0x4C ; L
+    cmp byte [input + 3], 0x6c ; l
     jne _return
     cmp byte [input + 4], 0x65 ; e
     jne _return
